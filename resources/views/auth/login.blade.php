@@ -51,15 +51,15 @@
                     </div>
                     </div>
     
-                    <div class="col">
+                    <div class="col text-center">
                     <!-- Simple link -->
                     <span>¿Aún no eres de los nuestros?</span><br>
-                    <a href="#!">Registrate</a>
+                    <a href="{{ route('register') }}">Registrate</a>
                     </div>
                 </div>
     
                 <!-- Submit button -->
-                <button type="button" class="btn btn-primary btn-block mb-4">Sign in</button>
+                <button type="button" class="btn btn-primary btn-block mb-4">Entrar</button>
     
                 </form>
     
