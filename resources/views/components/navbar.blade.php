@@ -7,7 +7,7 @@
 
     <!-- logo -->
     <a href="#" class="menu-logo">
-        <img src="https://wweb.dev/resources/navigation-generator/logo-placeholder.png" alt="My Awesome Website"/>
+        <h1>Ralp</h1>
         </a>
     
         <!-- menu items -->
@@ -15,22 +15,17 @@
         <ul>
             <li>
             <a href="#home">
-                Home
+                Inicio
             </a>
             </li>
             <li>
             <a href="#pricing">
-                Pricing
+                Inmuebles
             </a>
             </li>
             <li>
             <a href="#blog">
-                Blog
-            </a>
-            </li>
-            <li>
-            <a href="#docs">
-                Docs
+                Lugares
             </a>
             </li>
         </ul>

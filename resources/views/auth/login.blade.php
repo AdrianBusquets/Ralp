@@ -27,7 +27,9 @@
             </div>
             <div class="col-lg-8">
             <div class="card-body py-5 px-md-5">
-    
+            @if ($erro)
+                
+            @endif
                 <form>
                 <!-- Email input -->
                 <div class="form-outline mb-4">

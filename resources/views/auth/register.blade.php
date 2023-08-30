@@ -27,27 +27,40 @@
             </div>
             <div class="col-lg-8">
             <div class="card-body py-5 px-md-5">
-    
-                <form>
+                @if ($errors->any())
+                <div class="alert alert-danger">
+                    <ul>
+                    @foreach ($errors->all() as $error)
+                        <li>{{ $error }}</li>
+                    @endforeach
+                    </ul>
+                </div>
+            @endif
+            <form action="/login" method="POST" role="form">
+                @csrf
                 <div class="form-outline mb-4">
-                    <input type="name" id="form2Example1" class="form-control" />
+                    <input type="name" id="name" class="form-control" data-rule="minlen:3" data-msg="Por favor, pon al menos 3 caracteres" />
                     <label class="form-label" for="form2Example1">Nombre</label>
+                    <div class="validate"></div>
                 </div>
                 <!-- Email input -->
                 <div class="form-outline mb-4">
-                    <input type="email" id="form2Example1" class="form-control" />
+                    <input type="email" id="email" class="form-control" data-rule="minlen:4" data-msg="Por favor, pon al menos 4 caracteres" />
                     <label class="form-label" for="form2Example1">Email</label>
+                    <div class="validate"></div>
                 </div>
     
                 <!-- Password input -->
                 <div class="form-outline mb-4">
-                    <input type="password" id="form2Example2" class="form-control" />
+                    <input type="password" id="password" name="password" class="form-control" />
                     <label class="form-label" for="form2Example2">Contraseña</label>
+                    <div class="validate"></div>
                 </div>
 
                 <div class="form-outline mb-4">
-                    <input type="password" id="form2Example2" class="form-control" />
+                    <input type="password" id="password" name="password_confirmation" class="form-control" />
                     <label class="form-label" for="form2Example2">Repite contraseña</label>
+                    <div class="validate"></div>
                 </div>
     
                 <!-- 2 column grid layout for inline styling -->
@@ -60,7 +73,10 @@
                     </div>
                     </div>
                 </div>
-    
+                <div class="col text-center">
+                    <span>¿Ya eres de los nuestros?</span><br>
+                    <a href="{{ route('login') }}">Entra</a>
+                    </div>
                 <!-- Submit button -->
                 <button type="button" class="btn btn-primary btn-block mb-4">Registrarse</button>
     

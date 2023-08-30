@@ -13,7 +13,9 @@
 </head>
 <body>
     <x-navbar />
+    <main>
     {{ $slot }}
+    </main>
     <x-footer />
     @vite(['resources/js/app.js'])
     {{ $script ?? '' }}

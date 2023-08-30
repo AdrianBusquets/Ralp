@@ -1,5 +1,5 @@
     <!-- Footer -->
-    <footer class="bg-light text-center ">
+    <footer class="bg-light text-center mt-5">
         <!-- Grid container -->
         <div class="container p-4">
     
@@ -88,14 +88,17 @@
                 <li>
                     <a href="#!" class="text-dark">Link 1</a>
                 </li>
+                </ul>
+            </div>
+            <!--Grid column-->
+    
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase">Links</h5>
+    
+                <ul class="list-unstyled mb-0">
                 <li>
-                    <a href="#!" class="text-dark">Link 2</a>
-                </li>
-                <li>
-                    <a href="#!" class="text-dark">Link 3</a>
-                </li>
-                <li>
-                    <a href="#!" class="text-dark">Link 4</a>
+                    <a href="#!" class="text-dark">Link 1</a>
                 </li>
                 </ul>
             </div>
@@ -109,15 +112,6 @@
                 <li>
                     <a href="#!" class="text-dark">Link 1</a>
                 </li>
-                <li>
-                    <a href="#!" class="text-dark">Link 2</a>
-                </li>
-                <li>
-                    <a href="#!" class="text-dark">Link 3</a>
-                </li>
-                <li>
-                    <a href="#!" class="text-dark">Link 4</a>
-                </li>
                 </ul>
             </div>
             <!--Grid column-->
@@ -129,36 +123,6 @@
                 <ul class="list-unstyled mb-0">
                 <li>
                     <a href="#!" class="text-dark">Link 1</a>
-                </li>
-                <li>
-                    <a href="#!" class="text-dark">Link 2</a>
-                </li>
-                <li>
-                    <a href="#!" class="text-dark">Link 3</a>
-                </li>
-                <li>
-                    <a href="#!" class="text-dark">Link 4</a>
-                </li>
-                </ul>
-            </div>
-            <!--Grid column-->
-    
-            <!--Grid column-->
-            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                <h5 class="text-uppercase">Links</h5>
-    
-                <ul class="list-unstyled mb-0">
-                <li>
-                    <a href="#!" class="text-dark">Link 1</a>
-                </li>
-                <li>
-                    <a href="#!" class="text-dark">Link 2</a>
-                </li>
-                <li>
-                    <a href="#!" class="text-dark">Link 3</a>
-                </li>
-                <li>
-                    <a href="#!" class="text-dark">Link 4</a>
                 </li>
                 </ul>
             </div>
