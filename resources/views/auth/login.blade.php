@@ -19,28 +19,37 @@
             }
         }
         </style>
-        <div class="card mb-3">
+        <div class="mb-3">
         <div class="row g-0 d-flex align-items-center">
             <div class="col-lg-4 d-none d-lg-flex">
             <img src="https://mdbootstrap.com/img/new/ecommerce/vertical/004.jpg" alt="Trendy Pants and Shoes"
                 class="w-100 rounded-t-5 rounded-tr-lg-0 rounded-bl-lg-5" />
             </div>
             <div class="col-lg-8">
-            <div class="card-body py-5 px-md-5">
-            @if ($erro)
-                
+            <div class="py-5 px-md-5">
+            @if ($errors->any())
+                <div class="alert alert-danger">
+                    <ul>
+                    @foreach ($errors->all() as $error)
+                        <li>{{ $error }}</li>
+                    @endforeach
+                    </ul>
+                </div>
             @endif
-                <form>
+                <form action="/login" method="POST" role="form">
+                    @csrf
                 <!-- Email input -->
                 <div class="form-outline mb-4">
-                    <input type="email" id="form2Example1" class="form-control" />
+                    <input type="email" id="email" class="form-control" data-rule="minlen:4" data-msg="Por favor, pon al menos 4 caracteres"/>
                     <label class="form-label" for="form2Example1">Email</label>
+                    <div class="validate"></div>
                 </div>
     
                 <!-- Password input -->
                 <div class="form-outline mb-4">
-                    <input type="password" id="form2Example2" class="form-control" />
+                    <input type="password" id="password" class="form-control" />
                     <label class="form-label" for="form2Example2">Contraseña</label>
+                    <div class="validate"></div>
                 </div>
     
                 <!-- 2 column grid layout for inline styling -->
@@ -54,7 +63,6 @@
                     </div>
     
                     <div class="col text-center">
-                    <!-- Simple link -->
                     <span>¿Aún no eres de los nuestros?</span><br>
                     <a href="{{ route('register') }}">Registrate</a>
                     </div>
@@ -70,7 +78,6 @@
         </div>
         </div>
     </section>
-    <!-- Section: Design Block -->
 
 
 
