@@ -6,7 +6,7 @@
     <span></span>
 
     <!-- logo -->
-    <a href="#" class="menu-logo">
+    <a href="{{ route('home') }}" class="menu-logo">
         <h1>Ralp</h1>
         </a>
     
@@ -14,19 +14,19 @@
         <div class="menu">
         <ul>
             <li>
-            <a href="#home">
-                Inicio
-            </a>
-            </li>
-            <li>
             <a href="#pricing">
                 Inmuebles
             </a>
             </li>
-            <li>
-            <a href="#blog">
+            <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Lugares
             </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                {{-- @foreach ($cities as $city)
+                    <li><a class="dropdown-item" href="{{ route('city.ads', $city) }}">{{ $city->name }}</a></li>
+                @endforeach --}}
+            </ul>
             </li>
         </ul>
         <ul>

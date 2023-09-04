@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\AdController;
+use App\Http\Controllers\PublicController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +15,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// })->name('home');
+
+Route::get('/', [PublicController::class, 'index'])->name('home');
+
+Route::get('/city/{city:name}/ads', [PublicController::class, 'adsByCity'])->name('city.ads');
+
+Route::get('/ads/{ad}', [AdController::class, 'show'])->name("ads.show");
+
+Route::post('/ads/store', [AdController::class])->name('ads.store');

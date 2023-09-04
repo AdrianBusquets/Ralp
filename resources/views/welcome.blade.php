@@ -59,4 +59,16 @@
                             </div>
         </div>
     </div>
+
+
+{{-- @foreach ($categories as $category)
+    <h2>{{ $category->name }}</h2>
+    <ul>
+        @foreach ($category->ads as $ad)
+            <li>{{ $ad->title }}</li>
+            <!-- Mostrar otros detalles del anuncio según sea necesario -->
+        @endforeach
+    </ul>
+@endforeach --}}
+
 </x-layout>
