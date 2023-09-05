@@ -2,7 +2,7 @@
     <x-slot name="title">Ralp - Registrarse</x-slot>
 
 <!-- Section: Design Block -->
-<section class=" text-center text-lg-start">
+<section class="text-center text-lg-center">
     <style>
         .rounded-t-5 {
             border-top-left-radius: 0.5rem;
@@ -20,13 +20,9 @@
         }
         </style>
         <div class="mb-3">
-        <div class="row g-0 d-flex align-items-center">
-            <div class="col-lg-4 d-none d-lg-flex">
-            <img src="https://mdbootstrap.com/img/new/ecommerce/vertical/004.jpg" alt="Trendy Pants and Shoes"
-                class="w-100 rounded-t-5 rounded-tr-lg-0 rounded-bl-lg-5" />
-            </div>
-            <div class="col-lg-8">
-            <div class="py-5 px-md-5">
+        <div class="row g-0">
+            <div class="container mx-auto my-5 col-5">
+            <div class="py-5 px-md-5 Log">
                 @if ($errors->any())
                 <div class="alert alert-danger">
                     <ul>
@@ -78,7 +74,7 @@
                     <a href="{{ route('login') }}">Entra</a>
                     </div>
                 <!-- Submit button -->
-                <button type="button" class="btn btn-primary btn-block mb-4">Registrarse</button>
+                <button type="button" class="btn btn-block mb-4">Registrarse</button>
     
                 </form>
     
@@ -88,7 +84,6 @@
         </div>
     </section>
     <!-- Section: Design Block -->
-
 
 
 </x-layout>

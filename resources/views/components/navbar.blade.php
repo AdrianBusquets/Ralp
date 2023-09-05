@@ -22,10 +22,16 @@
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Lugares
             </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <ul class="dropdown-menu">
                 {{-- @foreach ($cities as $city)
                     <li><a class="dropdown-item" href="{{ route('city.ads', $city) }}">{{ $city->name }}</a></li>
                 @endforeach --}}
+                {{-- <li><a class="dropdown-item" href="#">Madrid</a></li>
+                <li><a class="dropdown-item" href="#">Cali</a></li>
+                <li><a class="dropdown-item" href="#">Bogota</a></li>
+                <li><a class="dropdown-item" href="#">Medellin</a></li>
+                <li><a class="dropdown-item" href="#">Pereira</a></li>
+                <li><a class="dropdown-item" href="#">Cartagena</a></li> --}}
             </ul>
             </li>
         </ul>

@@ -20,6 +20,20 @@ main{
     flex-grow: 1;
 }
 
+a{
+    text-decoration: none;
+}
+
+.btn{
+    background-color: var(--gris);
+    color: var(--azul);
+}
+
+.btn:hover{
+    background-color: var(--azul);
+    color: var(--gris);
+}
+
 
 /***********************************CARDS************************************************/
 
@@ -27,7 +41,7 @@ main{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    overflow: hidden;
+    
     flex-wrap: nowrap;
     position: relative;
     width: 100%;
@@ -37,7 +51,7 @@ main{
 .card{
     display: flex;
     justify-content: center;
-    width: 30rem;
+    width: 25rem;
     min-width: 10rem;
     height: 30rem;
     border-radius: 2rem;
@@ -62,7 +76,7 @@ main{
 
 .card:hover{
     height: 31rem;
-    width: 31rem;
+    width: 29rem;
     box-shadow: 6px 6px 13px -1px var(--oscuro);
     z-index: 999999;
 }
@@ -73,7 +87,6 @@ main{
 }
 
 /************************************NAVBAR*****************************************************/
-
 
 .menu-container {
     position: relative;
@@ -93,6 +106,7 @@ main{
 .menu-logo {
     line-height: 0;
     margin: 0 20px;
+    color: var(--azul);
 }
 
 .menu-logo img {
@@ -130,7 +144,7 @@ main{
     height: 4px;
     margin-bottom: 5px;
     position: relative;
-    background: var(--gris);
+    background: var(--azul);
     border-radius: 3px;
     z-index: 1;
     transform-origin: 4px 0px;
@@ -209,6 +223,21 @@ main{
     transform: translateX(-100%);
     }
 }
+
+/******************************************LOGIN*************************************************/
+.Log{
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--claro);
+    border-radius: 10px;
+    box-shadow: 0 0 10px var(--oscuro);
+    display: flex;
+    flex-direction: column;
+    
+}
+
 /****************************************FOOTER****************************************************/
 footer{
     background-color: white;
