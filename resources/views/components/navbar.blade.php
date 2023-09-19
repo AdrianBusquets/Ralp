@@ -44,13 +44,7 @@
                 </a>
                 </li>
             @endif
-            @if (Route::has('register'))
-            <li>
-                <a href="{{ route('register') }}">
-                    Registrar
-                </a>
-                </li>
-            @endif
+            
             @else
             <li>
                 <form id="logoutForm" action="{{ route('logout') }}" method="POST">

@@ -19,9 +19,7 @@
     
             <!-- Linkedin -->
             <a class="btn btn-primary btn-floating m-1" style="background-color: #0082ca" href="#!" role="button"><i class="bi bi-linkedin"></i></a>
-            <!-- Github -->
-            <a class="btn btn-primary btn-floating m-1" style="background-color: #333333" href="#!" role="button"><i class="bi bi-github"></i></a>
-        </section>
+            </section>
         <!-- Section: Social media -->
     
     
